@@ -10,14 +10,14 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderItemDto {
+public class CartItem {
     private Long productId;
     private String productTitle;
     private int quantity;
     private int pricePerProduct;
     private int price;
 
-    public OrderItemDto(Product product) {
+    public CartItem(Product product) {
         this.productId = product.getId();
         this.productTitle = product.getTitle();
         this.quantity = 1;
